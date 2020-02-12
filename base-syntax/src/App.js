@@ -1,8 +1,29 @@
 import React, { Component } from 'react';
 import './App.css';
+import UserInput from './UserInput/UserInput';
+import UserOutput from './UserIOutput/UserOutput'
 
 class App extends Component {
+  state = {
+    user: {
+      userName:'user one'
+    }
+  }
+
+  changeUserEventHandler = (event) => {
+    this.setState({
+      user: {userName: event.target.value}
+    })
+  }
+
   render() {
+
+    const styleInput = {
+      'background-color': 'white',
+      font: 'inherit',
+      border: '1px solid blue',
+      padding: '8px',      
+    }
     return (
       <div className="App">
         <ol>
@@ -17,6 +38,12 @@ class App extends Component {
           <li>Add two-way-binding to your input (in UserInput) to also display the starting username</li>
           <li>Add styling of your choice to your components/ elements in the components - both with inline styles and stylesheets</li>
         </ol>
+        <hr/>
+        <hr/>
+        <UserOutput userName={this.state.user.userName} userAge='50'></UserOutput>
+        <UserOutput userName='user2' userAge='60'></UserOutput>
+        <UserInput userName={this.state.user.userName} change={this.changeUserEventHandler} style={styleInput}></UserInput>
+
       </div>
     );
   }
