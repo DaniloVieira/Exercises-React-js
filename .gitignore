@@ -20,7 +20,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-<<<<<<< HEAD
+
 base-syntax/package-lock.json
 base-syntax/node_modules
 base-syntax/corverage
@@ -30,9 +30,9 @@ lists-conditionals/package-lock.json
 lists-conditionals/node_modules
 lists-conditionals/corverage
 lists-conditionals/build
-=======
+
 base-syntax--assignment-problem/package-lock.json
 base-syntax--assignment-problem/node_modules
 base-syntax--assignment-problem/corverage
 base-syntax--assignment-problem/build
->>>>>>> a865c5cdd194361ea67342ee3947e2e8944c01ef
+
