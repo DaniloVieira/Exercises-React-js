@@ -36,3 +36,7 @@ base-syntax--assignment-problem/node_modules
 base-syntax--assignment-problem/corverage
 base-syntax--assignment-problem/build
 
+routing--assignment-problem/package-lock.json
+routing--assignment-problem/node_modules
+routing--assignment-problem/corverage
+routing--assignment-problem/build
