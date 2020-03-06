@@ -40,3 +40,8 @@ routing--assignment-problem/package-lock.json
 routing--assignment-problem/node_modules
 routing--assignment-problem/corverage
 routing--assignment-problem/build
+
+redux--assignment-problem/package-lock.json
+redux--assignment-problem/node_modules
+redux--assignment-problem/corverage
+redux--assignment-problem/build
