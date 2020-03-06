@@ -5,12 +5,14 @@ const initialState = {
 };
 
 const reducer = ( state = initialState, action ) => {
+    console.log(action);
     switch ( action.type ) {
         case actionTypes.ADD_PERSON:
             const newPerson = {
                 id: Math.random(), // not really unique but good enough here!
-                name: 'Max',
-                age: Math.floor( Math.random() * 40 )
+                // name: 'Max',
+                // age: Math.floor( Math.random() * 40 )
+                ...action.personData
             }
             return {
                 ...state,
@@ -21,8 +23,9 @@ const reducer = ( state = initialState, action ) => {
                 ...state,
                 persons: state.persons.filter(person => person.id !== action.personId)
             }
+        default:
+            return state;
     }
-    return state;
 };
 
 export default reducer;
